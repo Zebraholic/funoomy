@@ -4,6 +4,7 @@ class Project < ActiveRecord::Base
 	has_many :likes
 	has_many :didits
 	has_many :uploads
+	has_many :comments
 
 	def score
 		(likes.count + didits.count) * 2
