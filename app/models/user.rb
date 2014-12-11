@@ -2,10 +2,7 @@ class User < ActiveRecord::Base
 
   authenticates_with_sorcery!
 
-  has_many :projects
-  has_many :likes
-  has_many :didits
-  has_many :uploads
+  has_many :projects, :likes, :didits, :uploads
 
   validates :password, length: { minimum: 3 }
   validates :password, confirmation: true
