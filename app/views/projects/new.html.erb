@@ -1,15 +1,5 @@
-<h1>Create a new project</h1>
+<h1>Submit a Daily Diversion</h1>
 
-<%= form_for(@project) do |f| %>
-  <div>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
+<%= render 'form' %>
 
-  <div>
-    <%= f.label :description %>
-    <%= f.text_area :description %>
-  </div>
-
-  <%= f.submit %>
-<% end %>
+<h2><%= link_to "Back to Daily Diversions", projects_path %></h2>
