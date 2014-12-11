@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Funoomy</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>Funoomy</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
 
-<%= yield %>
+	  <%= csrf_meta_tags %>
+	</head>
+		<body>
+			<header>
+			 <img src="/funoomy_logo.svg"> 
+			</header>
+		  <div id="nav">
+		    <% if current_user %>
+		      <%= link_to "Logout", :logout %>
+		    <% else %>
+		      <%= link_to "Register", new_user_path %> |
+		      <%= link_to "Login", :login %>
+		    <% end %>
+		  </div>
+		  <div>
+		    <p id="notice"><%= flash[:notice] %></p>
+		    <p id="alert"><%= flash[:alert] %></p>
+		  </div>
 
-</body>
+		  <%= yield %>
+
+		</body>
 </html>
