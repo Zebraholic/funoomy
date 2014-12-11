@@ -1,13 +1,21 @@
 <%= form_for(@project) do |f| %>
   <div>
-    <%= f.label :name %>
+    <%= f.label "Name Your Diversion" %>
     <%= f.text_field :name %>
   </div>
-
-  <div>
-    <%= f.label :description %>
+  <div>  
+    <%= f.label "Describe Your Diversion" %>
     <%= f.text_area :description %>
+  </div>
+  <div>  
+    <%= f.label "Start Date" %>
+    <%= f.datetime_select :start_at %>
+  </div>
+  <div>  
+    <%= f.label "End Date" %>
+    <%= f.datetime_select :end_at %>
   </div>
 
   <%= f.submit %>
 <% end %>
+
