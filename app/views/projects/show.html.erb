@@ -1,10 +1,11 @@
 <div>
       <h1> <%= @project.name %> </h1>
-      <%= @project.description %>
-      <%= @project.start_at %>
-      <%= @project.end_at %>
+      <div> <%= image_tag @project.file_url (:large) %> </div>
+      <p><%= @project.description %></p>
+      <p>Starts on: <%= @project.start_at.to_time.strftime('%B %e at %l:%M %p') %></p>
+      <p>Ends on: <%= @project.end_at.to_time.strftime('%B %e at %l:%M %p') %></p>
 </div>
-<h2><%= link_to "Edit This Diversion", edit_project_path(@project) %></h2>
-<h2><%= link_to "Back to Daily Diversions", projects_path %></h2>
+<p><%= link_to "Edit This Diversion", edit_project_path(@project) %></p>
+<p><%= link_to "Back to Daily Diversions", projects_path %></p>
 
 

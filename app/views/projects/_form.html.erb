@@ -15,6 +15,9 @@
     <%= f.label "End Date" %>
     <%= f.datetime_select :end_at %>
   </div>
+    <%= f.label "Add file or image" %>
+    <%= f.file_field :file %>
+  </p>
 
   <%= f.submit %>
 <% end %>

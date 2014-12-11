@@ -1,6 +1,6 @@
 <h1>Daily Diversions</h1>
 	<div>
-		<%= link_to "New Project", new_project_path %>
+		<div class="btn"><%= link_to "Submit a Daily Diversion", new_project_path %> </div>
 		<% @projects.each do |project| %></P>
 			<p><%= link_to project.name, "/projects/#{project.id}" %></p>
 			<% end %>

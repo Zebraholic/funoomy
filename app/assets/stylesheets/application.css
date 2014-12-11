@@ -16,16 +16,41 @@
 
  * {
 	margin: 0px;
-	padding: 5px;
+	padding:5px;
 }
 
 header {
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;	
+	border-bottom: medium solid grey;
+	width: 100%;
 	}
 
 body {
-	margin-left: 10px;
+	margin: 1	px;
 	font-family: Arial, sans-serif;
+	padding: 10px;
+	width: 600px;
 }
+
+a:link, a:visited {
+    display: block;
+    color: white;
+    border-radius: 5px;
+    background-color: #3498db;
+    width: 150px;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    background-color: #2980b9;
+
+
+
+
+
+
+
 

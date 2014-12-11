@@ -26,8 +26,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
-gem 'sorcery'
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -40,3 +38,9 @@ gem 'sorcery'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+#sorcery used for user login authetication
+gem 'sorcery'
+
+#carrierwave and rmagick used for image/file upload and image manipulation
+gem 'carrierwave'
+gem 'rmagick'

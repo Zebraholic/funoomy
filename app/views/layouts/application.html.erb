@@ -9,15 +9,13 @@
 	  <%= csrf_meta_tags %>
 	</head>
 		<body>
-			<header>
-			 <img src="/funoomy_logo.svg"> 
-			</header>
+			<header> <img src="/funoomy_logo.svg"> </header>
 		  <div id="nav">
 		    <% if current_user %>
 		      <%= link_to "Logout", :logout %>
 		    <% else %>
-		      <%= link_to "Register", new_user_path %> |
-		      <%= link_to "Login", :login %>
+		      <p><%= link_to "Register", new_user_path %> </p>
+		      <p><%= link_to "Login", :login %> </p>
 		    <% end %>
 		  </div>
 		  <div>
