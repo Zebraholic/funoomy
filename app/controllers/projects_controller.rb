@@ -43,6 +43,6 @@ def index
 
    private
   def project_params
-    params.require(:project).permit(:name, :funding_goal, :description, :file, :start_date, :end_date, rewards_attributes: [:id, :amount, :description, :_destroy])
+    params.require(:project).permit(:name, :funding_goal, :description, :file, :start_at, :end_at, users_attributes: [:id])
   end
 end
