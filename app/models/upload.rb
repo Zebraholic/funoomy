@@ -2,6 +2,6 @@ class Upload < ActiveRecord::Base
 
 	belongs_to :user
 	belongs_to :project
-	mount_uploader :file, UploadFileUploader
+	mount_uploader :file, ProjectsFileUploader
 
 end

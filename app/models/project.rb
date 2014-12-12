@@ -9,5 +9,6 @@ class Project < ActiveRecord::Base
 	def score
 		(likes.count + didits.count) * 2
 	end
+  mount_uploader :file, ProjectFileUploader
 
 end
