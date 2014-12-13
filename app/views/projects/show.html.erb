@@ -1,8 +1,9 @@
 <div>
       <h1> <%= @project.name %> </h1>
       <div> <%= image_tag @project.file_url (:large) %> </div>
-			<div class="like"> 51 </div>
+			<div class="like"> 51 </div>			<div class="didit"> 33 </div>
 			<p><%= @project.description %></p>
+			<p><%= link_to "Upload your Photo" %> </p>
       <p>Starts on: <%= @project.start_at.to_time.strftime('%A, %d %b %Y %l:%M %p') %></p>
       <p>Ends on: <%= @project.end_at.to_time.strftime('%A, %d %b %Y %l:%M %p') %></p>
 </div>

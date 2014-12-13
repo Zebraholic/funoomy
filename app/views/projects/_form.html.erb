@@ -1,21 +1,21 @@
 <%= form_for(@project) do |f| %>
   <div>
-    <%= f.label "Name Your Diversion" %>
+    <%= f.label "Name Your Diversion:" %>
     <%= f.text_field :name %>
   </div>
   <div>  
-    <%= f.label "Describe Your Diversion" %>
-    <%= f.text_area :description %>
+    <%= f.label "Describe Your Diversion:" %>
+    <%= f.text_area :description, :cols => "100", :rows => "10" %>
   </div>
   <div>  
-    <%= f.label "Start Date" %>
+    <%= f.label "Start Date:" %>
     <%= f.datetime_select :start_at %>
   </div>
   <div>  
-    <%= f.label "End Date" %>
+    <%= f.label "End Date:" %>
     <%= f.datetime_select :end_at %>
   </div>
-    <%= f.label "Add file or image" %>
+    <%= f.label "Add file or image:" %>
     <%= f.file_field :file %>
   </p>
 
