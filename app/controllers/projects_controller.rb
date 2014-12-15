@@ -1,7 +1,8 @@
 class ProjectsController < ApplicationController
+  before_action :require_login, except: :index
   
-def index
-  @projects = Project.all
+  def index
+    @projects = Project.all
   end
 
   def new
@@ -10,7 +11,8 @@ def index
 
   def create
     @project = Project.new(project_params)
-    @project.user = current_user 
+    @project.user = current_user
+
     if @project.save
       redirect_to projects_url
     else
@@ -33,9 +35,10 @@ def index
   end
 
   def destroy
+    @project = Project.find(params[:id])
+    @project.destroy
+    redirect_to projects_path
   end
-
-  
 
   def show
     @project = Project.find(params[:id])
@@ -43,6 +46,6 @@ def index
 
    private
   def project_params
-    params.require(:project).permit(:name, :funding_goal, :description, :file, :start_at, :end_at, users_attributes: [:id])
+    params.require(:project).permit(:name, :description, :file, :start_at, :end_at)
   end
 end
