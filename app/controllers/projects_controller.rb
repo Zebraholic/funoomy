@@ -46,6 +46,6 @@ class ProjectsController < ApplicationController
 
    private
   def project_params
-    params.require(:project).permit(:name, :description, :file, :start_at, :end_at)
+    params.require(:project).permit(:name, :description, :file, :start_at, :end_at, uploads_attributes: [:file])
   end
 end

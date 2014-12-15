@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   
   root "projects#index"
 
-  resources :projects
+  resources :projects do 
+    resources :uploads
+  end
   resources :users
   resources :user_sessions, only: [:new, :create, :destroy]
 

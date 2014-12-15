@@ -44,3 +44,7 @@ gem 'sorcery'
 #carrierwave and rmagick used for image/file upload and image manipulation
 gem 'carrierwave'
 gem 'rmagick'
+
+#cocoon used for nested forms/attributes
+gem 'cocoon'
+gem 'pry-rails'
