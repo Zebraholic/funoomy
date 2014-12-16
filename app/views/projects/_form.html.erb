@@ -1,11 +1,11 @@
 <%= form_for(@project) do |f| %>
   <div>
-    <%= f.label "Name Your Diversion:" %>
-    <%= f.text_field :name %>
+    <p><%= f.label "Name Your Diversion:" %><p>
+    <%= f.text_field :name, :size=>"97" %>
   </div>
   <div>  
-    <%= f.label "Describe Your Diversion:" %>
-    <%= f.text_area :description, :cols => "100", :rows => "10" %>
+    <p><%= f.label "Describe Your Diversion:" %></p>
+    <%= f.text_area :description, :cols => "100", :rows => "20" %>
   </div>
   <div>  
     <%= f.label "Start Date:" %>
@@ -15,7 +15,15 @@
     <%= f.label "End Date:" %>
     <%= f.datetime_select :end_at %>
   </div>
-<% end %>
+  <div>
+    <%= f.label "Add file or image:" %>
+    <%= f.file_field :file %>
+  </div> 
+
+    <%= f.submit %>
+  <% end %> 
+
+
 
       
 

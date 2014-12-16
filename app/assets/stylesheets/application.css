@@ -16,21 +16,24 @@
 
  * {
   margin: 0px;
-  padding: 5px;
+  padding: 0px;
 }
 
 header {
   margin-top: 0px;
-  margin-bottom: 30px;  
+  margin-bottom: 20px;  
   border-bottom: medium solid grey;
+  height: 60px;
   width: 100%;
     }
 
 body {
-  margin: 1   px;
+  margin:  0px;
   font-family: Arial, sans-serif;
-  padding: 10px;
-  width: 600px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 h1 {
@@ -38,6 +41,15 @@ h1 {
     color: grey;
     font-weight: bolder;
 }
+
+inline {
+  display: inline, block;
+  width: 800px;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
 
 a:link, a:visited {
   display: block;
@@ -48,6 +60,7 @@ a:link, a:visited {
   text-align: center;
   padding: 4px;
   text-decoration: none;
+  margin: 10px;
 }
 
 a:hover, a:active {

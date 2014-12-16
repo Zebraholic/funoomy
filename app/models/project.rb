@@ -10,6 +10,5 @@ class Project < ActiveRecord::Base
 		(likes.count + didits.count) * 2
 	end
   mount_uploader :file, ProjectFileUploader
-  # accepts_nested_attributes_for :uploads
 
 end
