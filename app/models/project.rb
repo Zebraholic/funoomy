@@ -9,6 +9,16 @@ class Project < ActiveRecord::Base
 	def score
 		(likes.count + didits.count) * 2
 	end
+
+	def upload_count
+		uploads.to_a.uniq{|x| x.user_id }.count
+	end
+
+	def total_points
+		upload_count * 50
+	end
+
+
   mount_uploader :file, ProjectFileUploader
 
 end

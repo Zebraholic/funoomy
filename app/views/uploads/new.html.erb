@@ -1,7 +1,7 @@
 <%= form_for [@project, @upload] do |f| %> 
   <div>
-    <%= f.label "Add file or image:" %>
-    <%= f.file_field :file %>
+    <p><%= f.label "Add file or image:" %></p>
+    <p><%= f.file_field :file %></p>
   </div>
 
 <%= f.submit %>

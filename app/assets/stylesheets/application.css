@@ -28,7 +28,7 @@ header {
     }
 
 body {
-  margin:  0px;
+  margin:  10px;
   font-family: Arial, sans-serif;
   padding: 0px;
   margin-left: auto;
@@ -40,14 +40,20 @@ h1 {
     font-family: Arial, sans-serif;
     color: grey;
     font-weight: bolder;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
 }
 
 inline {
-  display: inline, block;
+  display: inline;  
   width: 800px;
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
+  padding: -3px;
+  margin: -3px;
+  line-height: 0;
+
 }
 
 
@@ -55,7 +61,7 @@ a:link, a:visited {
   display: block;
   color: white;
   border-radius: 5px;
-  background-color: #3498db;
+  background-color: #00CCFF;
   width: 180px;
   text-align: center;
   padding: 4px;
@@ -64,15 +70,17 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  background-color: #2980b9;
+  background-color: #0099FF;
 }
 
 .like {   
     display: inline;
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-    padding-top: 5px;
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
     color: white;
     border-radius: 5px;
     font-family: Raleway, sans-serif;
@@ -85,10 +93,11 @@ a:hover, a:active {
 
 .didit {
     display: inline;
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-    padding-top: 5px;
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    margin: 20px;
+    padding: 10px;
     color: white;
     border-radius: 5px;
     font-family: Raleway, sans-serif;

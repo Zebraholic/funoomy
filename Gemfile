@@ -48,3 +48,5 @@ gem 'rmagick'
 #cocoon used for nested forms/attributes
 gem 'cocoon'
 gem 'pry-rails'
+gem 'quiet_assets'
+gem 'awesome_print'
