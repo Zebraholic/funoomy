@@ -12,4 +12,13 @@ class User < ActiveRecord::Base
   validates :password_confirmation, presence: true
   validates :email, uniqueness: true  
 
+	def upload_count
+		uploads.count
+		# uploads.to_a.uniq{|x| x.user_id }.count
+	end
+
+	def total_points
+			uploads.count * 50
+	end
+
 end

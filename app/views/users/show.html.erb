@@ -4,8 +4,9 @@
 <p><%= @user.first_name%> <%=@user.last_name %></p>
 <p><%= @user.email%></p>
 
-<p class="like"> 44 </p>      <p class="didit"> 75 </p>
+      <div class="like"> <%= @user.uploads.count %> </div> <div class="didit"> <%= @user.total_points %> </div>     
 
 <h1>My Submitted Diversions</h1>
+
 
 <p><%= link_to "Back to Daily Diversions", projects_path %></p>

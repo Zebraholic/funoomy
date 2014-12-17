@@ -10,7 +10,11 @@ class UploadsController < ApplicationController
 	  @upload = Upload.new(upload_params)
 	  @upload.user_id = current_user.id
 	  @upload.project_id = @project.id
-	  redirect_to project_path(@project), notice: 'Image/file uploaded' if @upload.save
+	  if @upload.save
+	  	redirect_to project_path(@project), notice: 'Image/file uploaded' 
+	  else
+	  	render '/uploads/new'
+	  end
 	end
 
 private

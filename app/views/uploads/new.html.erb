@@ -1,3 +1,9 @@
+<% if @upload.errors.messages %>
+	<% @upload.errors.messages.each do |message| %>
+		<p><%= message[1] %></p>
+	<% end %>
+<% end %>
+
 <%= form_for [@project, @upload] do |f| %> 
   <div>
     <p><%= f.label "Add file or image:" %></p>
@@ -6,3 +12,4 @@
 
 <%= f.submit %>
 <% end %>
+<p><%= link_to "Back to Daily Diversions", projects_path %></p>

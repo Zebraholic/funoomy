@@ -22,8 +22,12 @@
 		    <p id="notice"><%= flash[:notice] %></p>
 		    <p id="alert"><%= flash[:alert] %></p>
 		  </div>
+				<p><%= link_to "Your Profile", "/users/current_user" %></p>
+
 
 		  <%= yield %>
 
 		</body>
 </html>
+
+
