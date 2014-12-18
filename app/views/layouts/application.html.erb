@@ -9,8 +9,8 @@
 	  <%= csrf_meta_tags %>
 	</head>
 		<body>
-			<header> <img src="/funoomy_logo.svg"> </header>
-		  <div id="nav">
+			<header> <span><img src="/funoomy_logo.svg"> </header>
+		  <fixed>
 		    <% if current_user %>
 		      <%= link_to "Logout", :logout %>
 		    <% else %>
@@ -22,10 +22,13 @@
 		    <p id="notice"><%= flash[:notice] %></p>
 		    <p id="alert"><%= flash[:alert] %></p>
 		  </div>
-				<p><%= link_to "Your Profile", "/users/current_user" %></p>
+		  </fixed>		
 
+				<p><%= link_to "My Profile", "/users/current_user" %></p>
 
 		  <%= yield %>
+
+			<footer> &copy 2014-2015  Funoomy Inc. </footer>
 
 		</body>
 </html>

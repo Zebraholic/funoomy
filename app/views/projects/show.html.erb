@@ -1,16 +1,20 @@
 <div>
-      <h1><%= @project.name %></h1>
+  <h1><%= @project.name %></h1>
       <p> <%= image_tag @project.file_url (:large) %> </p>
-			<div class="like"> <%= @project.upload_count %> </div>			<div class="didit"> <%= @project.total_points %> </div>
+			   <div class="likeit"> <%= @project.likes.count %></div> <div class="upload"> <%= @project.upload_count %> </div> <div class="didit"> <%= @project.total_points %> </div>
+    
+      <p><%= render "like_button" %></p>
 			<p><%= simple_format(@project.description) %></p>
       <p>Starts on: <%= @project.start_at.to_time.strftime('%A, %d %b %Y %l:%M %p') %></p>
       <h2>Ends on: <%= @project.end_at.to_time.strftime('%A, %d %b %Y %l:%M %p') %></h2>
       <h2>Earn: 50 POINTS</h2>
       <h1><%= @project.name %></h1>
+
     	<% @project.uploads.each do |upload| %>
-    	<inline> <%=image_tag upload.file_url (:medium) %> </inline>
+    	 <inline> <%=image_tag upload.file_url (:medium) %> </inline>
     	<% end %>
 </div>
+
 <h2><%= link_to "Join In!", new_project_upload_path(@project) %></h2>
 <p><%= link_to "Edit this Diversion", edit_project_path(@project) %></p>
 <p><%= link_to "Delete this Diversion", @project, method: :delete, data: {confirm: "Are you sure you want to delete this project?"}  %></p>

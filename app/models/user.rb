@@ -2,8 +2,12 @@ class User < ActiveRecord::Base
 
   authenticates_with_sorcery!
 
+  #owned projects
   has_many :projects
+
   has_many :likes
+  has_many :projects, through: :likes
+
   has_many :didits
   has_many :uploads
 
@@ -18,7 +22,11 @@ class User < ActiveRecord::Base
 	end
 
 	def total_points
-			uploads.count * 50
+		uploads.count * 50
 	end
+
+  def liked?(project)
+    liked_projects.include?(project)
+  end
 
 end

@@ -47,6 +47,10 @@ gem 'rmagick'
 
 #cocoon used for nested forms/attributes
 gem 'cocoon'
+
+#acts_as_votable used to create like/unlike feature
+gem 'acts_as_votable', '~> 0.10.0'
+
 gem 'pry-rails'
 gem 'quiet_assets'
 gem 'awesome_print'

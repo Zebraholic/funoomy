@@ -20,20 +20,21 @@
 }
 
 header {
-  margin-top: 0px;
-  margin-bottom: 20px;  
+  margin-top: 20px;
   border-bottom: medium solid grey;
   height: 60px;
   width: 100%;
     }
 
 body {
-  margin:  10px;
+  margin:  5px;
   font-family: Arial, sans-serif;
   padding: 0px;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  background: url("/photogrrr3.gif");
+  background-repeat: repeat;
 }
 
 h1 {
@@ -73,7 +74,7 @@ a:hover, a:active {
   background-color: #0099FF;
 }
 
-.like {   
+.upload {   
     display: inline;
     width: 80px;
     height: 80px;
@@ -108,7 +109,37 @@ a:hover, a:active {
     text-decoration: none;
 }
 
+.likeit {
+    display: inline;
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    margin: 20px;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    background-color: #CC9933;
+    text-align: center;
+    text-decoration: none;
+}
 
+fixed{
+    position-top: 0px;
+    position-right: 125px;
+  }
+
+footer {
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-bottom: 0px;  
+  border-top: medium solid grey;
+  height: 40px;
+  width: 100%;
+  font-size: 12px;
+    }
 
 
 

@@ -1,14 +1,13 @@
 class Project < ActiveRecord::Base
 
 	belongs_to :user
+
 	has_many :likes
+  has_many :users, through: :likes
+
 	has_many :didits
 	has_many :uploads
 	has_many :comments
-
-	def score
-		(likes.count + didits.count) * 2
-	end
 
 	def upload_count
 		uploads.count
@@ -20,8 +19,13 @@ class Project < ActiveRecord::Base
 	end
 
 
-
-
   mount_uploader :file, ProjectFileUploader
+
+  acts_as_votable
+
+  def liked?(user)
+  	likes.where(user_id: user.id).count > 0
+  end
+
 
 end

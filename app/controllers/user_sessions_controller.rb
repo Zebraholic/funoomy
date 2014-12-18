@@ -13,6 +13,6 @@ class UserSessionsController < ApplicationController
 
   def destroy
     logout
-    redirect_to root_url, notice: "You have logged out, come back soon!"
+    redirect_to root_url, notice: "You are logged out."
   end
 end

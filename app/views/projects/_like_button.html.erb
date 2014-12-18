@@ -1,0 +1,12 @@
+<p>
+<% if @project.liked?(current_user)  %>
+  <% like = @project.likes.where(:user_id => current_user.id).first %>
+  <div class="unlike_button">
+    <%= link_to "Un Like", like_path(id: like.id, project_id: @project.id), :method => :delete %>
+  </div>
+<% else %>
+  <%= link_to "Like", project_likes_path(@project), :method => :post %>
+<% end %>
+  </p>
+
+
