@@ -1,11 +1,9 @@
 <h1>My Profile</h1>
-
-
-<p><%= @user.first_name%> <%=@user.last_name %></p>
-<p><%= @user.email%></p>
-
-      <div class="upload"> <%= @user.uploads.count %> </div> <div class="didit"> <%= @user.total_points %> </div>     
-
+	<p><%= @user.first_name%> <%=@user.last_name %></p>
+	<p><%= @user.email%></p>
+  	<div class="upload"> <%= @user.uploads.count %> </div> <div class="didit"> <%= @user.total_points %> </div>     
+			
 <h1>My Submitted Diversions</h1>
+	<p><%= link_to "Back to Daily Diversions", projects_path %></p>
 
-<p><%= link_to "Back to Daily Diversions", projects_path %></p>
+

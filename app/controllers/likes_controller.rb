@@ -7,7 +7,7 @@ class LikesController < ApplicationController
 	def create
 	  project = Project.find(params[:project_id])
 	  Like.create(:project => project, :user => current_user)
-	  redirect_to project_path(project), :notice => "You just liked #{project.name}" 
+	  redirect_to project_path(project), :notice => "" 
     respond_to do |format|
       format.js {}
       format.html {}
@@ -20,7 +20,7 @@ class LikesController < ApplicationController
     project = Project.find(params[:project_id])
     like = Like.find(params[:id])
     like.destroy
-    redirect_to project_path(project), :notice => "Unliked"
+    redirect_to project_path(project), :notice => ""
   end
 end
 
