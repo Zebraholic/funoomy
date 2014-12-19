@@ -50,12 +50,58 @@ h2 {
 
 .intro {
   text-align: center;
-  height: 500px;
+  vertical-align: center;
   font-family: Arial, sans-serif;
-  font-weight: bold;
-  font-size: 40px;
+  font-weight: bolder;
+  color: grey;
+  font-size: 60px;
+  -webkit-animation-delay: 1s;
 }
 
+.intro1 {
+  text-align: center; top;
+  font-family: Arial, sans-serif;
+  font-weight: thin;
+  color: grey;
+  font-size: 30px;
+  -webkit-animation-delay: 2s;
+}
+
+.intro2 {
+  text-align: center; top;
+  font-family: Arial, sans-serif;
+  font-weight: thin;
+  color: grey;
+  font-size: 30px;
+  -webkit-animation-delay: 3s;
+}
+
+.intro3 {
+  text-align: center; top;
+  font-family: Arial, sans-serif;
+  font-weight: thin;
+  color: grey;
+  font-size: 30px;
+  -webkit-animation-delay: 3.5s;
+}
+
+.intro4 {
+  text-align: center; top;
+  font-family: Arial, sans-serif;
+  font-weight: thin;
+  color: grey;
+  font-size: 30px;
+  -webkit-animation-delay: 4s;
+}
+
+.intro5 {
+  text-align: center; top;
+  font-family: Arial, sans-serif;
+  font-weight: thin;
+  color: grey;
+  font-size: 30px;
+  -webkit-animation-delay: 4.5s;
+}
 
 .greyline {
   border-top: medium solid grey;
@@ -63,7 +109,7 @@ h2 {
   font-family: Arial, sans-serif;
   color: grey;
   font-weight: bolder;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 30px;
   font-size: 48px;
 }
