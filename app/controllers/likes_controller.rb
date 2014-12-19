@@ -15,8 +15,6 @@ class LikesController < ApplicationController
 	end
 
 	def destroy
-    # binding.pry
-    # like = project.likes.find(params[:id])
     project = Project.find(params[:project_id])
     like = Like.find(params[:id])
     like.destroy

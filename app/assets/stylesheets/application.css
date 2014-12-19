@@ -47,6 +47,27 @@ h1 {
 h2 {
     margin-bottom: 20px;
 }
+
+.intro {
+  text-align: center;
+  height: 500px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+
+.greyline {
+  border-top: medium solid grey;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  color: grey;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 48px;
+}
+
 .collage {
   display: inline-block;
 }
