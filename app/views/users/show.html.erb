@@ -4,6 +4,7 @@
   	<div class="upload"> <%= @user.uploads.count %> </div> <div class="didit"> <%= @user.total_points %> </div>     
 			
 <h1>My Submitted Diversions</h1>
-	<p><%= link_to "Back to Daily Diversions", projects_path %></p>
+	<div class="btn"><%= link_to "Submit a Daily Diversion", new_project_path %> </div>
+		<p><%= link_to "Back to Daily Diversions", projects_path %></p>
 
 

@@ -61,7 +61,7 @@ h2 {
 .intro1 {
   text-align: center; top;
   font-family: Arial, sans-serif;
-  font-weight: thin;
+  font-weight: bold;
   color: grey;
   font-size: 30px;
   -webkit-animation-delay: 2s;
@@ -70,7 +70,7 @@ h2 {
 .intro2 {
   text-align: center; top;
   font-family: Arial, sans-serif;
-  font-weight: thin;
+  font-weight: bold;
   color: grey;
   font-size: 30px;
   -webkit-animation-delay: 3s;
@@ -79,7 +79,7 @@ h2 {
 .intro3 {
   text-align: center; top;
   font-family: Arial, sans-serif;
-  font-weight: thin;
+  font-weight: bold;
   color: grey;
   font-size: 30px;
   -webkit-animation-delay: 3.5s;
@@ -88,7 +88,7 @@ h2 {
 .intro4 {
   text-align: center; top;
   font-family: Arial, sans-serif;
-  font-weight: thin;
+  font-weight: bold;
   color: grey;
   font-size: 30px;
   -webkit-animation-delay: 4s;
@@ -97,7 +97,7 @@ h2 {
 .intro5 {
   text-align: center; top;
   font-family: Arial, sans-serif;
-  font-weight: thin;
+  font-weight: bold;
   color: grey;
   font-size: 30px;
   -webkit-animation-delay: 4.5s;
